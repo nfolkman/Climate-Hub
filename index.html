@@ -7,16 +7,16 @@
    <title>Climate Hub</title>
    <link rel="stylesheet" href="dist\output.css">
 </head>
-<body class="bg-zinc-100 font-sans font-family: Arial leading-normal tracking-normal">
+<body class="bg-zinc-50 font-sans font-family: Arial leading-normal tracking-normal">
    
-   <section> <!----- overall site content wrapper ------>
+   <section class="container w-full h-full bg-blue-grey"> <!----- overall site content wrapper ------>
 
       <header class="container flex justify-between w-full">
       
 
          <div class=""> <!----- nav container -->
 
-            <nav class="flex items-center justify-between flex-wrap bg-slate-800 p-6 fixed w-full z-10 top-0">
+            <nav class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0 bg-gray-800">
 
                <div class="flex flex-wrap">
 
@@ -27,25 +27,25 @@
                </div>
 
 
-               <ul class="flex justify-center border-b space-x-4"> <!---- main list of nav links -->
+               <ul class="flex justify-center space-x-4"> <!---- main list of nav links -->
                   <li class="-mb-px mr-1">
-                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
-                        <span class="link link-underline link-underline-black">Home</span>
+                     <a class="bg-white inline-block  rounded py-2 px-4 text-green-600 hover:text-blue-600 font-medium" href="#">
+                        <span class="">Home</span>
                      </a>
                   </li>
                   <li class="mr-1">
-                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
-                        <span class="link link-underline link-underline-black">News</span>
+                     <a class="bg-white inline-block  rounded py-2 px-4 text-green-600 hover:text-blue-600 font-medium" href="#">
+                        <span class="">News</span>
                      </a>
                   </li>
                   <li class="mr-1">
-                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
-                        <span class="link link-underline link-underline-black">Data</span>
+                     <a class="bg-white inline-block rounded py-2 px-4 text-green-600 hover:text-blue-600 font-medium" href="#">
+                        <span class="">Data</span>
                      </a>
                   </li>
                   <li class="mr-1">
-                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
-                        <span class="link link-underline link-underline-black">Impact</span>
+                     <a class="bg-white inline-block rounded py-2 px-4 text-green-600 hover:text-blue-600 font-medium" href="#">
+                        <span class="">Impact</span>
                      </a>
                   </li>
                </ul>
@@ -128,27 +128,7 @@
       </footer>
 
    </section>
-   <style>
-      .link-underline {
-         border-bottom-width: 0;
-         background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-         background-size: 0 2px;
-         background-position: 0 100%;
-         background-repeat: no-repeat;
-         transition: background-size .3s ease-in-out;
-         margin-top: 5px;
-      }
    
-      .link-underline-black {
-         background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(29, 29, 29), rgb(29, 29, 29))
-      }
-   
-      .link-underline:hover {
-         background-size: 100% 2px;
-         background-position: 0 100%
-      }
-   </style>
-
 
 </body>
 </html>
