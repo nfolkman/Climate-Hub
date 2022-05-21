@@ -5,60 +5,58 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Climate Hub</title>
-   <link rel="stylesheet" href="output.css">
+   <link rel="stylesheet" href="dist\output.css">
 </head>
-<body>
+<body class="bg-zinc-100 font-sans font-family: Arial leading-normal tracking-normal">
    
    <section> <!----- overall site content wrapper ------>
-      <br>
-      <h1 class="text-yellow-400">Is this working?</h1>
-      <br>
 
-      <header>
+      <header class="container flex justify-between w-full">
       
 
-         <div> <!----- nav container -->
+         <div class=""> <!----- nav container -->
 
-            <nav>
+            <nav class="flex items-center justify-between flex-wrap bg-slate-800 p-6 fixed w-full z-10 top-0">
 
-               <div>
+               <div class="flex flex-wrap">
 
-                  <h1>
-                     <a href="#">ClimateHub</a>
+                  <h1 class="text-green-600 text-2xl font-bold tracking-normal">
+                     <a class="" href="#">ClimateHub</a>
                   </h1>
 
                </div>
 
 
-               <ul> <!---- main list of nav links -->
-                  <li>
-                     <a href="#">
-                        <span>Home</span>
+               <ul class="flex justify-center border-b space-x-4"> <!---- main list of nav links -->
+                  <li class="-mb-px mr-1">
+                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
+                        <span class="link link-underline link-underline-black">Home</span>
                      </a>
                   </li>
-                  <li>
-                     <a href="#">
-                        <span>News</span>
+                  <li class="mr-1">
+                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
+                        <span class="link link-underline link-underline-black">News</span>
                      </a>
                   </li>
-                  <li>
-                     <a href="#">
-                        <span>Data</span>
+                  <li class="mr-1">
+                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
+                        <span class="link link-underline link-underline-black">Data</span>
                      </a>
                   </li>
-                  <li>
-                     <a href="#">
-                        <span>Impact</span>
+                  <li class="mr-1">
+                     <a class="bg-white inline-block border-l border-t border-r rounded-t py-2 px-4 text-blue-500 hover:text-blue-600 font-semibold" href="#">
+                        <span class="link link-underline link-underline-black">Impact</span>
                      </a>
                   </li>
                </ul>
 
+               <button class="bg-transparent hover:bg-green-600 text-green-600 font-semibold hover:text-white py-2 px-4 border border-green-600 hover:border-transparent rounded" id="connectButton">Connect</button>     <!----- button that cues modal for socials and such-->
+
             </nav>
+
 
          </div> <!---- end nav -->
 
-
-         <button id="connectButton">Connect</button>     <!----- button that cues modal for socials and such-->
 
 
       </header>
@@ -130,7 +128,26 @@
       </footer>
 
    </section>
-
+   <style>
+      .link-underline {
+         border-bottom-width: 0;
+         background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+         background-size: 0 2px;
+         background-position: 0 100%;
+         background-repeat: no-repeat;
+         transition: background-size .3s ease-in-out;
+         margin-top: 5px;
+      }
+   
+      .link-underline-black {
+         background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(29, 29, 29), rgb(29, 29, 29))
+      }
+   
+      .link-underline:hover {
+         background-size: 100% 2px;
+         background-position: 0 100%
+      }
+   </style>
 
 
 </body>
