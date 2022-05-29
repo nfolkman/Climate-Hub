@@ -44,9 +44,9 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  font-family: "Source\\ Sans\\ Pro",ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Epilogue","Archivo\\ Black";
   /* 4 */
 }
 
@@ -452,7 +452,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(54 209 151 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -677,6 +677,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.mb-12 {
+margin-bottom: 3.25rem;
+}
+
+.mb-15 {
+margin-bottom:  4rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -851,6 +859,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-60 {
   width: 15rem;
+}
+
+.w-70 {
+  width: 35rem;
+}
+.w-75 {
+  width: 40rem;
+}
+
+.w-80{
+  width: 45rem
 }
 
 .w-\[30px\] {
@@ -1149,7 +1168,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(62 156 121 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f5f8ff\] {
@@ -1174,7 +1193,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-secondary {
   --tw-bg-opacity: 1;
-  background-color: rgb(19 194 150 / var(--tw-bg-opacity));
+  background-color: rgb(138 128 249 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f3f4ff\] {
@@ -1235,9 +1254,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .from-primary {
-  --tw-gradient-from: #3056d3;
+  --tw-gradient-from: #3e9c79;
   --tw-gradient-stops: var(--tw-gradient-from),
-    var(--tw-gradient-to, rgb(48 86 211 / 0));
+    var(--tw-gradient-to, rgb(62 156 121 / 0));
 }
 
 .to-transparent {
@@ -1487,6 +1506,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -1583,7 +1612,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(62 156 121 / var(--tw-text-opacity));
 }
 
 .text-\[\#cdced6\] {
@@ -1688,7 +1717,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ring-primary {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(48 86 211 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(62 156 121 / var(--tw-ring-opacity));
 }
 
 .grayscale {
@@ -1727,7 +1756,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Source Sans Pro","Inter", sans-serif, "Epilogue";
 }
 
 .sticky {
@@ -1795,14 +1824,14 @@ body {
 
 .sticky .signUpBtn {
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(62 156 121 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .sticky .signUpBtn:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
+  background-color: rgb(3 51 33 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1890,7 +1919,7 @@ body {
 
 .hover\:border-primary:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(62 156 121 / var(--tw-border-opacity));
 }
 
 .hover\:border-dark:hover {
@@ -1900,12 +1929,12 @@ body {
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
+  background-color: rgb(62 156 121 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-dark:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
+  background-color: rgb(7 5 26 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-100:hover {
@@ -1918,7 +1947,7 @@ body {
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(62 156 121 / var(--tw-text-opacity));
 }
 
 .hover\:text-dark:hover {
@@ -1972,7 +2001,7 @@ body {
 
 .focus\:border-primary:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(48 86 211 / var(--tw-border-opacity));
+  border-color: rgb(62 156 121 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -2020,7 +2049,7 @@ body {
 
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
-  color: rgb(48 86 211 / var(--tw-text-opacity));
+  color: rgb(62 156 121 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100 {
@@ -2486,6 +2515,11 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\text-4xl {
+  font-size: 2.5rem;
+  line-height:  3rem;
   }
 
   .lg\:text-white {

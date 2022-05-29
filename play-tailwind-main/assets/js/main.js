@@ -13,11 +13,11 @@
       ud_header.classList.remove("sticky");
     }
 
-    // === logo change
+    // === logo change                             // little victories :)
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo.svg";
+      document.getElementById('titleLogo').classList.add('text-black'); 
     } else {
-      logo.src = "assets/images/logo/logo-white.svg";
+      document.getElementById('titleLogo').classList.remove('text-black')
     }
 
     // show or hide the back-top-top button
