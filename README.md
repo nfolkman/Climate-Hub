@@ -1,4 +1,7 @@
 <h1>Climate Hub</h1>
+
+![Screenshot (203)](https://user-images.githubusercontent.com/98185555/175434432-38fdea0f-2186-41f3-9c0a-e7b205af893c.png)
+
 <br>
  <section align="left">  
    <h2>What's the Big Idea?</h2>
