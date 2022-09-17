@@ -2,3 +2,18 @@
    width: 150px;
    height: 120px;
 }
+
+.climateExplorer{
+   width: 100%;
+   height: 75vh;
+   overflow: hidden;
+   z-index: 1;
+}
+.expertAnswers{
+   text-decoration: underline;
+   font-weight: bolder;
+}
+
+.thanks{
+   color: rgb(22, 120, 185);
+}

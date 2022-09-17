@@ -2,7 +2,11 @@ const puppeteer = require('puppeteer')
 const URL = 'https://www.dailyclimate.org/impacts/'
 
 
+
 async function scraper(){
+
+
+
    const browser = await puppeteer.launch()
    const page = await browser.newPage()
    await page.goto(URL, {waitUntil: 'domcontentloaded'})

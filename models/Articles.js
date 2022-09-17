@@ -18,4 +18,4 @@ const articlesSchema = new Schema({
 })
 
 
-module.exports = mongoose.model('Article', articlesSchema, 'articles')
+module.exports = mongoose.model('Article', articlesSchema)

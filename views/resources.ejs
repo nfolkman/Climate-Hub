@@ -1,40 +1,34 @@
 <!DOCTYPE ejs>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Climate Hub
-    </title>
+    <title>Resources</title>
     <link
       rel="shortcut icon"
-      href="assets/images/icons8-plant-flaticons-flat-96.png"
+      href="./assets/images/icons8-plant-flaticons-flat-96.png"
       type="image/x-icon"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- ==== WOW JS ==== -->
-    <script src="../public/assets/js/wow.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
   </head>
-  <body class="font-source text-base">
+  <body>
     <!-- ====== Navbar Section Start -->
     <div
       class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
     >
       <div class="container">
         <div class="relative -mx-4 flex items-center justify-between">
-          <div class="w-80 max-w-full px-4">
-            <a href="index.ejs" id="titleLogo" class=" w-full pt-8 font-bold md:text-4xl text-2xl font-source text-white ud-menu-scroll">
-              <img src="./assets/images/icons8-plant-flaticons-flat-96.png" alt="plant" class="w-[50px] inline-block">
+          <div class=" w-80 max-w-full px-4">
+            <a href="index.ejs" id="titleLogo" class="block w-full py-5 font-bold md:text-4xl text-2xl font-source text-white ud-menu-scroll">
+              <img src="./assets/images/icons8-plant-flaticons-flat-96.png" alt="plant" class="w-8 inline-block pb-3">
               Climate Hub</a>
           </div>
           <div class="flex w-full items-center justify-between px-4">
@@ -60,39 +54,12 @@
                 <ul class="blcok lg:flex">
                   <li class="group relative">
                     <a
-                      href="#home"
+                      href="index.html"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:pt-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 link-underline link-underline-black font-semibold"
                     >
                       Home
                     </a>
                   </li>
-                  <li class="group relative">
-                    <a
-                      href="#news"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:pt-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12 link-underline link-underline-black font-semibold"
-                    >
-                      News
-                    </a>
-                  </li>
-                  <li class="group relative">
-                    <a
-                      href="#data"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:pt-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12 link-underline link-underline-black font-semibold"
-                    >
-                      Data
-                    </a>
-                  </li>
-
-                  <li class="group relative">
-                    <a
-                      href="#FAQ"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:pt-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12 link-underline link-underline-black font-semibold"
-                    >
-                      FAQ
-                    </a>
-                  </li>
-                  
-                  
                   <li class="submenu-item group relative mx-12">
                     <a
                       href="javascript:void(0)"
@@ -104,13 +71,13 @@
                       class="submenu relative top-full left-0 hidden w-[200px] md:[250px] rounded-sm bg-white sm:bg-transparent p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
                     >
                       <a
-                        href="#"
+                        href="about.html"
                         class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary font-semibold"
                       >
                         About
                       </a>
                       <a
-                        href="./resources.ejs"
+                        href="C:\Users\folkm\OneDrive\Рабочий стол\Software Engineering\GitHub\Climate-Hub-main\public\resources.html"
                         class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary font-semibold"
                       >
                         Resources
@@ -140,114 +107,86 @@
     </div>
     <!-- ====== Navbar Section End -->
 
-    <!-- ====== Hero Section Start -->
+    <!-- ====== Banner Section Start -->
     <div
-      id="home"
-      class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+      class="relative z-10 overflow-hidden bg-primary pt-[120px] pb-[100px] md:pt-[130px] lg:pt-[160px]"
     >
       <div class="container">
         <div class="-mx-4 flex flex-wrap items-center">
           <div class="w-full px-4">
-            <div
-              class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
-              data-wow-delay=".2s"
-            >
-              <h1
-                class="mb-8 text-3xl font-semibold leading-snug text-white sm:text-xl sm:leading-snug md:text-4xl md:leading-snug font-epilogue"
-              >
-                Today's Environment
-              </h1>
-              <p
-                class="mx-auto mb-10 max-w-[600px] text-base text-[#e4e4e4] sm:text-xl sm:leading-relaxed md:text-xl md:leading-relaxed"
-              >
-                It takes information and community to develop the aptitude <em><strong>to change</strong></em>.
-              </p>
-              <ul class="mb-15 flex flex-wrap items-center justify-center">
-                <li>
-                  <a
-                    href="#"
-                    class="inline-flex items-center justify-center rounded-lg bg-white py-4 px-6 text-center text-base font-medium text-dark transition duration-300 ease-in-out hover:text-primary hover:shadow-lg sm:px-10"
-                  >
-                    See The Stats
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="flex items-center py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-70 sm:px-10"
-                  >
-                    Resources
-                    <span class="pl-2">
-                      <svg
-                        width="20"
-                        height="8"
-                        viewBox="0 0 20 8"
-                        class="fill-current"
-                      >
-                        <path
-                          d="M19.2188 2.90632L17.0625 0.343819C16.875 0.125069 16.5312 0.0938193 16.2812 0.281319C16.0625 0.468819 16.0312 0.812569 16.2188 1.06257L18.25 3.46882H0.9375C0.625 3.46882 0.375 3.71882 0.375 4.03132C0.375 4.34382 0.625 4.59382 0.9375 4.59382H18.25L16.2188 7.00007C16.0312 7.21882 16.0625 7.56257 16.2812 7.78132C16.375 7.87507 16.5 7.90632 16.625 7.90632C16.7812 7.90632 16.9375 7.84382 17.0312 7.71882L19.1875 5.15632C19.75 4.46882 19.75 3.53132 19.2188 2.90632Z"
-                        />
-                      </svg>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-              
+            <div class="text-center">
+              <h1 class="text-4xl font-semibold text-white">Climate Action Resources</h1>
             </div>
           </div>
         </div>
       </div>
-      
-    </div>
-    <div class="w-full px-0 bg-primary">
-      <div
-        class="wow fadeInUp relative z-10 mx-auto max-w-full"
-        data-wow-delay=".25s"
-      >
-        <div class="mt-0">
-          <img
-            src="assets\images\raphael-cruz-IwY-27ceRCA-unsplash.jpg"
-            alt="hero"
-            class="mx-0 max-w-full"
-          />
-        </div>
+      <div>
+        <span class="absolute top-0 left-0 z-[-1]">
+          <svg
+            width="495"
+            height="470"
+            viewBox="0 0 495 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="55"
+              cy="442"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="446"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z"
+              stroke="white"
+              stroke-opacity="0.08"
+              stroke-width="12"
+            />
+          </svg>
+        </span>
+        <span class="absolute top-0 right-0 z-[-1]">
+          <svg
+            width="493"
+            height="470"
+            viewBox="0 0 493 470"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="462"
+              cy="5"
+              r="138"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="50"
+            />
+            <circle
+              cx="49"
+              cy="470"
+              r="39"
+              stroke="white"
+              stroke-opacity="0.04"
+              stroke-width="20"
+            />
+            <path
+              d="M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z"
+              stroke="white"
+              stroke-opacity="0.06"
+              stroke-width="13"
+            />
+          </svg>
+        </span>
       </div>
     </div>
-    <!-- ====== Hero Section End -->
-
-    <!-- ====== Features Section Start -->
-    <section id="news" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mb-12 max-w-[620px] lg:mb-20">
-              <span class="mb-2 block text-base font-normal text-primary">
-                NEWS
-              </span>
-              <h2 
-                class="mb-4 text-3xl font-semibold text-dark sm:text-4xl md:text-[42px]"
-              >
-                What's New?
-              </h2>
-              <p
-                class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-              >
-                With such a large number of countries and organizations around the world developing individual goals and cooperative programs for climate action, trying to stay up-to-date and "in the know" can be overwhelming. At <strong>Climate Hub</strong>, we're doing our best to make that a little easier.
-              </p>
-            </div>
-            
-            <!--<ul>
-               
-            </ul> -->
-          </div>
-        </div>
-        <div class="-mx-4 flex flex-wrap">
-            
-        </div>
-      </div>
-    </section>
-    <!-- ====== Features Section End -->
+    <!-- ====== Banner Section End -->
 
     <!-- ====== About Section Start -->
     <section
@@ -295,7 +234,7 @@
                 <div class="text-center">
                   <div class="relative z-10 inline-block">
                     <img
-                      src="#"
+                      src="assets/images/about/about-image.svg"
                       alt="image"
                       class="mx-auto lg:ml-auto"
                     />
@@ -308,468 +247,6 @@
       </div>
     </section>
     <!-- ====== About Section End -->
-
-    <!-- ====== Data Section Start -->
-    <section
-      id="data"
-      class="relative z-20 overflow-hidden bg-white pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
-    >
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[620px] text-center lg:mb-20">
-              <span class="mb-2 block text-lg font-semibold text-primary">
-                Data: See What's What
-              </span>
-              <h2
-                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]"
-              >
-                Up-to-"data"
-              </h2>
-              <p
-                class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-              >
-                Finding up-to-date info from reliable sources can be hard, but we're doing our best to help. Make sure to check out the up-to-date climate data below!
-              </p>
-              <span class="text-xs font-thin thanks">(Courtesy of the <strong>National Aeronautics & Space Administration (NASA)</strong> and <strong><a href="https://crt-climate-explorer.nemac.org/" target="_blank">The Climate Explorer</a></strong>)</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-wrap items-center justify-center">
-          
-          <iframe class="climateExplorer mb-15" src="https://climate.nasa.gov/" frameborder="0"></iframe>
-
-          <iframe class="climateExplorer mt-15" src="https://crt-climate-explorer.nemac.org/?area-id=06067&zoom=7&lat=38.5815719&lon=-121.4943996&id=tmax" frameborder="0"></iframe>
-        
-        </div>
-      </div>
-    </section>
-    <!-- ====== Pricing Section End -->
-
-    <!-- ====== Faq Section Start -->
-    <section id="FAQ"
-      class="relative z-20 overflow-hidden bg-[#f3f4ff] pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]"
-    >
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4">
-            <div class="mx-auto mb-[60px] max-w-[620px] text-center lg:mb-20">
-              <span class="mb-2 block text-xl font-semibold text-primary">
-                FAQ
-              </span>
-              <h2
-                class="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[42px]"
-              >
-                Any Questions? 
-                <br><span class="expertAnswers">Answers From Experts.</span>
-              </h2>
-              <p
-                class="text-xl leading-relaxed text-body-color sm:text-xl sm:leading-relaxed"
-              >
-                (<strong>Great resource for FAQs</strong> - https://www.epa.gov/climatechange-science/frequently-asked-questions-about-climate-change)
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="-mx-4 flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2">
-            <div
-              class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-5 sm:p-8"
-              data-wow-delay=".1s
-              "
-            >
-              <button class="faq-btn flex w-full items-center text-left">
-                <div
-                  class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="10"
-                    viewBox="0 0 17 10"
-                    class="icon fill-current"
-                  >
-                    <path
-                      d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                      fill="#3056D3"
-                      stroke="#3056D3"
-                    />
-                  </svg>
-                </div>
-                <div class="w-full">
-                  <h4 class="text-base font-semibold text-black sm:text-lg">
-                    "What exactly <em>is</em> climate change?"
-                  </h4>
-                </div>
-              </button>
-              <div class="faq-content hidden pl-[25px]">
-                <p class="py-3 text-base leading-relaxed text-body-color">
-                  Climate change involves significant changes in average conditions—such as temperature, precipitation, wind patterns, and other aspects of climate—that occur over years, decades, centuries, or longer. Climate change involves longer-term trends, such as shifts toward warmer, wetter, or drier conditions. These trends can be caused by natural variability in climate over time, as well as human activities that add greenhouse gases to the atmosphere like burning fossil fuels for energy.
-                </p>
-                <a class="text-sm text-primary transition duration-300 ease-in-out hover:opacity-70 sm:px-10" href="https://www.epa.gov/climatechange-science/frequently-asked-questions-about-climate-change#climate-change" target="_blank">https://www.epa.gov/climatechange-science</a>
-              </div>
-            </div>
-            <div
-              class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-5 sm:p-8"
-              data-wow-delay=".15s
-              "
-            >
-              <button class="faq-btn flex w-full items-center text-left">
-                <div
-                  class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="10"
-                    viewBox="0 0 17 10"
-                    class="icon fill-current"
-                  >
-                    <path
-                      d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                      fill="#3056D3"
-                      stroke="#3056D3"
-                    />
-                  </svg>
-                </div>
-                <div class="w-full">
-                  <h4 class="text-base font-semibold text-black sm:text-lg">
-                    "What is the difference between <em>weather</em> and <em>climate</em>?"
-                  </h4>
-                </div>
-              </button>
-              <div class="faq-content hidden pl-[25px]">
-                <p class="py-3 text-base leading-relaxed text-body-color">
-                  "Weather" refers to the day-to-day state of the atmosphere such as the combination of temperature, humidity, rainfall, wind, and other factors. "Climate" describes the weather of a place averaged over a period of time, often 30 years. Think about it this way: climate is something that can be expected to happen in general, like a cold winter season, whereas weather is what a person might experience on any given day, like a snowstorm in January or a sunny day in July.
-                </p>
-                <a class="text-sm text-primary transition duration-300 ease-in-out hover:opacity-70 sm:px-10" href="https://www.epa.gov/climatechange-science/frequently-asked-questions-about-climate-change#weather-climate" target="_blank">https://www.epa.gov/climatechange-science</a>
-              </div>
-            </div>
-            <div
-              class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-5 sm:p-8"
-              data-wow-delay=".2s
-              "
-            >
-              <button class="faq-btn flex w-full items-center text-left">
-                <div
-                  class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="10"
-                    viewBox="0 0 17 10"
-                    class="icon fill-current"
-                  >
-                    <path
-                      d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                      fill="#3056D3"
-                      stroke="#3056D3"
-                    />
-                  </svg>
-                </div>
-                <div class="w-full">
-                  <h4 class="text-base font-semibold text-black sm:text-lg">
-                     "Is there scientific consensus that people are causing today’s climate change?"
-                  </h4>
-                </div>
-              </button>
-              <div class="faq-content hidden pl-[25px]">
-                <p class="py-3 text-base leading-relaxed text-body-color">
-                  <strong>Yes.</strong> Climate scientists overwhelmingly agree that people are contributing significantly to today’s climate change, primarily by releasing excess greenhouse gases into the atmosphere from activities such as burning fossil fuels for energy, cultivating crops, raising livestock, and clearing forests. The <a  class="text-primary transition duration-300 ease-in-out font-semibold hover:opacity-70" href="https://www.ipcc.ch/assessment-report/ar6/" target="_blank">Intergovernmental Panel on Climate Change's Sixth Assessment Report</a>, which represents the work of hundreds of leading experts in climate science, states that <strong>"it is unequivocal that human influence has warmed the atmosphere, ocean and land. Widespread and rapid changes in the atmosphere, ocean, cryosphere, and biosphere have occurred.”</strong>
-                </p>
-                <a class="text-sm text-primary transition duration-300 ease-in-out hover:opacity-70 sm:px-10" href="https://www.epa.gov/climatechange-science/frequently-asked-questions-about-climate-change#scientific-consensus">https://www.epa.gov/climatechange-science</a>
-              </div>
-
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <div
-              class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-5 sm:p-8"
-              data-wow-delay=".1s
-              "
-            >
-              <button class="faq-btn flex w-full items-center text-left">
-                <div
-                  class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="10"
-                    viewBox="0 0 17 10"
-                    class="icon fill-current"
-                  >
-                    <path
-                      d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                      fill="#3056D3"
-                      stroke="#3056D3"
-                    />
-                  </svg>
-                </div>
-                
-                <div class="w-full">
-                  <h1 class="font-extrabold text-warning">STOPPED HERE</h1>
-                  <h4 class="text-base font-semibold text-black sm:text-lg">
-                    Can I use this template for commercial project?
-                  </h4>
-                </div>
-              </button>
-              <div class="faq-content hidden pl-[25px]">
-                <p class="py-3 text-base leading-relaxed text-body-color">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available .
-                </p>
-              </div>
-            </div>
-            <div
-              class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-5 sm:p-8"
-              data-wow-delay=".15s
-              "
-            >
-              <button class="faq-btn flex w-full items-center text-left">
-                <div
-                  class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="10"
-                    viewBox="0 0 17 10"
-                    class="icon fill-current"
-                  >
-                    <path
-                      d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                      fill="#3056D3"
-                      stroke="#3056D3"
-                    />
-                  </svg>
-                </div>
-                <div class="w-full">
-                  <h4 class="text-base font-semibold text-black sm:text-lg">
-                    Do you have plan to releasing Play Pro?
-                  </h4>
-                </div>
-              </button>
-              <div class="faq-content hidden pl-[25px]">
-                <p class="py-3 text-base leading-relaxed text-body-color">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available .
-                </p>
-              </div>
-            </div>
-            <div
-              class="single-faq wow fadeInUp mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-5 sm:p-8"
-              data-wow-delay=".2s
-              "
-            >
-              <button class="faq-btn flex w-full items-center text-left">
-                <div
-                  class="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-primary bg-opacity-5 text-primary"
-                >
-                  <svg
-                    width="17"
-                    height="10"
-                    viewBox="0 0 17 10"
-                    class="icon fill-current"
-                  >
-                    <path
-                      d="M7.28687 8.43257L7.28679 8.43265L7.29496 8.43985C7.62576 8.73124 8.02464 8.86001 8.41472 8.86001C8.83092 8.86001 9.22376 8.69083 9.53447 8.41713L9.53454 8.41721L9.54184 8.41052L15.7631 2.70784L15.7691 2.70231L15.7749 2.69659C16.0981 2.38028 16.1985 1.80579 15.7981 1.41393C15.4803 1.1028 14.9167 1.00854 14.5249 1.38489L8.41472 7.00806L2.29995 1.38063L2.29151 1.37286L2.28271 1.36548C1.93092 1.07036 1.38469 1.06804 1.03129 1.41393L1.01755 1.42738L1.00488 1.44184C0.69687 1.79355 0.695778 2.34549 1.0545 2.69659L1.05999 2.70196L1.06565 2.70717L7.28687 8.43257Z"
-                      fill="#3056D3"
-                      stroke="#3056D3"
-                    />
-                  </svg>
-                </div>
-                <div class="w-full">
-                  <h4 class="text-base font-semibold text-black sm:text-lg">
-                    Where and how to host this template?
-                  </h4>
-                </div>
-              </button>
-              <div class="faq-content hidden pl-[25px]">
-                <p class="py-3 text-base leading-relaxed text-body-color">
-                  It takes 2-3 weeks to get your first blog post ready. That
-                  includes the in-depth research & creation of your monthly
-                  content marketing strategy that we do before writing your
-                  first blog post, Ipsum available .
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="absolute bottom-0 right-0 z-[-1]">
-        <svg
-          width="1440"
-          height="886"
-          viewBox="0 0 1440 886"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            opacity="0.5"
-            d="M193.307 -273.321L1480.87 1014.24L1121.85 1373.26C1121.85 1373.26 731.745 983.231 478.513 729.927C225.976 477.317 -165.714 85.6993 -165.714 85.6993L193.307 -273.321Z"
-            fill="url(#paint0_linear)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear"
-              x1="1308.65"
-              y1="1142.58"
-              x2="602.827"
-              y2="-418.681"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#3e9c79" stop-opacity="0.36" />
-              <stop offset="1" stop-color="#f2fdf8" stop-opacity="0" />
-              <stop offset="1" stop-color="#f2fdf8" stop-opacity="0.096144" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-    </section>
-    <!-- ====== Faq Section End -->
-
-
-
-    <!-- ====== Contact Start ====== -->
-    <section id="contact" class="relative py-20 md:py-[120px]">
-      <div
-        class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-[#f3f4fe] lg:h-[45%] xl:h-1/2"
-      ></div>
-      <div class="container px-4">
-        <div class="-mx-4 flex flex-wrap items-center">
-          <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
-            <div class="ud-contact-content-wrapper">
-              <div class="ud-contact-title mb-12 lg:mb-[150px]">
-                <span class="mb-6 text-base font-semibold text-dark">
-                  CONTACT US
-                </span>
-                <br>
-                <br>
-                <h2 class="text-[32px] font-semibold">
-                  Love to hear from you!
-                </h2>
-              </div>
-              <div class="mb-8 flex flex-wrap justify-between lg:mb-0">
-                <div class="mb-8 flex w-[330px] max-w-full">
-                  <div class="mr-6 text-[32px] text-primary">
-                    <svg
-                      width="29"
-                      height="35"
-                      viewBox="0 0 29 35"
-                      class="fill-current"
-                    >
-                      <path
-                        d="M14.5 0.710938C6.89844 0.710938 0.664062 6.72656 0.664062 14.0547C0.664062 19.9062 9.03125 29.5859 12.6406 33.5234C13.1328 34.0703 13.7891 34.3437 14.5 34.3437C15.2109 34.3437 15.8672 34.0703 16.3594 33.5234C19.9688 29.6406 28.3359 19.9062 28.3359 14.0547C28.3359 6.67188 22.1016 0.710938 14.5 0.710938ZM14.9375 32.2109C14.6641 32.4844 14.2812 32.4844 14.0625 32.2109C11.3828 29.3125 2.57812 19.3594 2.57812 14.0547C2.57812 7.71094 7.9375 2.625 14.5 2.625C21.0625 2.625 26.4219 7.76562 26.4219 14.0547C26.4219 19.3594 17.6172 29.2578 14.9375 32.2109Z"
-                      />
-                      <path
-                        d="M14.5 8.58594C11.2734 8.58594 8.59375 11.2109 8.59375 14.4922C8.59375 17.7188 11.2187 20.3984 14.5 20.3984C17.7812 20.3984 20.4062 17.7734 20.4062 14.4922C20.4062 11.2109 17.7266 8.58594 14.5 8.58594ZM14.5 18.4297C12.3125 18.4297 10.5078 16.625 10.5078 14.4375C10.5078 12.25 12.3125 10.4453 14.5 10.4453C16.6875 10.4453 18.4922 12.25 18.4922 14.4375C18.4922 16.625 16.6875 18.4297 14.5 18.4297Z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h5 class="mb-6 text-lg font-semibold">Our Location</h5>
-                    <p class="text-base text-body-color">
-                      401 Broadway, 24th Floor, Orchard Cloud View, London
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-8 flex w-[330px] max-w-full">
-                  <div class="mr-6 text-[32px] text-primary">
-                    <svg
-                      width="34"
-                      height="25"
-                      viewBox="0 0 34 25"
-                      class="fill-current"
-                    >
-                      <path
-                        d="M30.5156 0.960938H3.17188C1.42188 0.960938 0 2.38281 0 4.13281V20.9219C0 22.6719 1.42188 24.0938 3.17188 24.0938H30.5156C32.2656 24.0938 33.6875 22.6719 33.6875 20.9219V4.13281C33.6875 2.38281 32.2656 0.960938 30.5156 0.960938ZM30.5156 2.875C30.7891 2.875 31.0078 2.92969 31.2266 3.09375L17.6094 11.3516C17.1172 11.625 16.5703 11.625 16.0781 11.3516L2.46094 3.09375C2.67969 2.98438 2.89844 2.875 3.17188 2.875H30.5156ZM30.5156 22.125H3.17188C2.51562 22.125 1.91406 21.5781 1.91406 20.8672V5.00781L15.0391 12.9922C15.5859 13.3203 16.1875 13.4844 16.7891 13.4844C17.3906 13.4844 17.9922 13.3203 18.5391 12.9922L31.6641 5.00781V20.8672C31.7734 21.5781 31.1719 22.125 30.5156 22.125Z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h5 class="mb-6 text-lg font-semibold">How Can We Help?</h5>
-                    <p class="text-base text-body-color">info@yourdomain.com</p>
-                    <p class="text-base text-body-color">
-                      contact@yourdomain.com
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
-            <div
-              class="wow fadeInUp rounded-lg bg-white py-10 px-8 shadow-testimonial sm:py-12 sm:px-10 md:p-[60px] lg:p-10 lg:py-12 lg:px-10 2xl:p-[60px]"
-              data-wow-delay=".2s
-              "
-            >
-              <h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
-                Send us a Message
-              </h3>
-              <form>
-                <div class="mb-6">
-                  <label for="fullName" class="block text-xs text-dark"
-                    >Full Name*</label
-                  >
-                  <input
-                    type="text"
-                    name="fullName"
-                    placeholder="Adam Gelius"
-                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                  />
-                </div>
-                <div class="mb-6">
-                  <label for="email" class="block text-xs text-dark"
-                    >Email*</label
-                  >
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="example@yourmail.com"
-                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                  />
-                </div>
-                <div class="mb-6">
-                  <label for="phone" class="block text-xs text-dark"
-                    >Phone*</label
-                  >
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="+885 1254 5211 552"
-                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                  />
-                </div>
-                <div class="mb-6">
-                  <label for="message" class="block text-xs text-dark"
-                    >Message*</label
-                  >
-                  <textarea
-                    name="message"
-                    rows="1"
-                    placeholder="type your message here"
-                    class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
-                  ></textarea>
-                </div>
-                <div class="mb-0">
-                  <button
-                    type="submit"
-                    class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== Contact End ====== -->
 
     <!-- ====== Footer Section Start -->
     <footer
@@ -986,7 +463,86 @@
           <div class="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div class="mb-10 w-full">
               <h4 class="mb-9 text-lg font-semibold text-white">Partners</h4>
-             
+              <ul class="flex flex-wrap items-center">
+                <li>
+                  <a
+                    href="https://tailgrids.com"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+                  >
+                    <img
+                      src="assets/images/footer/brands/tailgrids.svg"
+                      alt="tailgrids"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://ayroui.com"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+                  >
+                    <img
+                      src="assets/images/footer/brands/ayroui.svg"
+                      alt="ayroui"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://ecommercehtml.com"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+                  >
+                    <img
+                      src="assets/images/footer/brands/ecommerce-html.svg"
+                      alt="ecommerce-html"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://graygrids.com"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+                  >
+                    <img
+                      src="assets/images/footer/brands/graygrids.svg"
+                      alt="graygrids"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://lineicons.com"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+                  >
+                    <img
+                      src="assets/images/footer/brands/lineicons.svg"
+                      alt="lineicons"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://uideck.com"
+                    rel="nofollow noopner"
+                    target="_blank"
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
+                  >
+                    <img
+                      src="assets/images/footer/brands/uideck.svg"
+                      alt="uideck"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1310,60 +866,16 @@
 
     <!-- ====== Back To Top Start -->
     <a
-      href="#home"
-      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark ud-menu-scroll"
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
     >
       <span
-        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white">
-      </span>
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
+      ></span>
     </a>
     <!-- ====== Back To Top End -->
 
     <!-- ====== All Scripts -->
-
     <script src="assets/js/main.js"></script>
-    <script>
-      // ==== for menu scroll
-      const pageLink = document.querySelectorAll(".ud-menu-scroll");
-
-      pageLink.forEach((elem) => {
-        elem.addEventListener("click", (e) => {
-          e.preventDefault();
-          document.querySelector(elem.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-            offsetTop: 1 - 60,
-          });
-        });
-      });
-
-      // section menu active
-      function onScroll(event) {
-        const sections = document.querySelectorAll(".ud-menu-scroll");
-        const scrollPos =
-          window.pageYOffset ||
-          document.documentElement.scrollTop ||
-          document.body.scrollTop;
-
-        for (let i = 0; i < sections.length; i++) {
-          const currLink = sections[i];
-          const val = currLink.getAttribute("href");
-          const refElement = document.querySelector(val);
-          const scrollTopMinus = scrollPos + 73;
-          if (
-            refElement.offsetTop <= scrollTopMinus &&
-            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-          ) {
-            document
-              .querySelector(".ud-menu-scroll")
-              .classList.remove("active");
-            currLink.classList.add("active");
-          } else {
-            currLink.classList.remove("active");
-          }
-        }
-      }
-
-      window.document.addEventListener("scroll", onScroll);
-    </script>
   </body>
 </html>
