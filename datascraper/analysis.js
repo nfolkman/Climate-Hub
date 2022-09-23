@@ -25,7 +25,7 @@ mongoose.connect(process.env.DB_STRING, {
 
       //Then this will create the new documents, thus replacing all documents within the database with the new data :)
 
-      return Articles.create({data})
+      return Articles.create(data)
          
 
       }catch(err) {

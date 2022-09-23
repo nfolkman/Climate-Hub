@@ -1,3 +1,4 @@
+const ArticlesModel = require('../models/Articles')
 // Home route controller
 
 module.exports = {

@@ -17,3 +17,36 @@
 .thanks{
    color: rgb(22, 120, 185);
 }
+
+nav li a{
+   box-shadow: inset 0 0 0 0 #ffffffd7;
+  color: #ffffffd7;
+  width: 3.5rem;
+  margin: 0 2rem;
+  padding: 0 2rem;
+  transition: color .2s ease-in-out, box-shadow .3s ease-in-out;
+  border-radius: .375rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav li a:hover{
+   box-shadow: inset 100px 0 0 0 #fcfdfd;
+   border-radius: .375rem;
+   border: .5px solid transparent;
+}
+
+.submenu-item .more{
+   width: 6rem;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.more{
+   transition: none !important;
+}
+
+.more:hover{
+   box-shadow: none;
+   color: #fcfdfd !important;
+}

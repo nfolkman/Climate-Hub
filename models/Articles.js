@@ -17,5 +17,5 @@ const articlesSchema = new Schema({
    }
 })
 
-
-module.exports = mongoose.model('Article', articlesSchema)
+                                                          // collection name
+module.exports = mongoose.model('Article', articlesSchema,'Impacts')
