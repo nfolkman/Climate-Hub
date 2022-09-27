@@ -27,18 +27,24 @@ async function scraper(){
 
       // target scrape content
       let items = Array.from(document.querySelectorAll('article.page-article'))
+
+      let image = Array.from(document.querySelectorAll('#col-center > div.widget__head > a > img')).map(x => x.src)
+
       let title = Array.from(document.querySelectorAll('.widget__headline-text')).map(x => x.textContent.trim())
-      let summary = Array.from(document.querySelectorAll('.body-description p')).map(x => x.textContent.trim())
-      let source = Array.from(document.querySelectorAll('.source-link')).map(x => x.textContent.trim())
+      let summary = Array.from(document.querySelectorAll('.body-description')).map(x => x.textContent.trim())
+      let source = Array.from(document.querySelectorAll('.widget__body.clearfix.sm-mt-1 > a')).map(x => x.textContent.trim())
+      let link = Array.from(document.querySelectorAll('.widget__body.clearfix.sm-mt-1 > a')).map(x=> x.getAttribute('href'))
       let date = Array.from(document.querySelectorAll('.social-date__text')).map(x => x.textContent.trim())
 
 
       // iterate through content and push to array
       for(let i = 0; i<items.length; i++){
          list.push( {
+            image: image[i],
             title: title[i],
             summary: summary[i],
             source: source[i],
+            link: link[i],
             date: date[i],
          })
       }

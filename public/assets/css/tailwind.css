@@ -2113,6 +2113,15 @@ body {
   opacity: 1;
 }
 
+
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+
+
+
 @media (min-width: 540px) {
   .sm\:flex {
     display: flex;

@@ -1,3 +1,8 @@
+html {
+   scroll-behavior: smooth;
+ }
+
+
 .questionImages{
    width: 150px;
    height: 120px;
@@ -14,8 +19,8 @@
    font-weight: bolder;
 }
 
-.thanks{
-   color: rgb(22, 120, 185);
+.faqLink{
+   text-decoration: underline;
 }
 
 nav li a{
@@ -49,4 +54,69 @@ nav li a:hover{
 .more:hover{
    box-shadow: none;
    color: #fcfdfd !important;
+}
+
+
+.articles{
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+}
+
+.articleItems{
+   width: 28vw;
+   height: auto;
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+.articleItems:hover{
+   background-color: #e4e2e26f;
+   transition: 225ms;
+}
+
+.linkIcon{
+   width: 20px !important;
+   height: 20px;
+}
+
+.articleFooter{
+   margin-top: auto;
+}
+
+
+
+@media screen and (max-width:600px){
+   .articleItems{
+      width: 95vw !important;
+   }
+}
+
+@media screen and (min-width:700px) and (max-width:1000px){
+   
+ 
+   .articleItems{
+      width: 35vw;
+      
+   }
+}
+
+@media screen and (min-width:1500px) and (max-width:1599px){
+   .articles{
+      width: 100%;
+   }
+   .articleItems{
+      width: 27vw !important;
+   }
+}
+
+@media screen and (min-width:1600px){
+
+   .articles{
+      width: 100%;
+   }
+   .articleItems{
+      width: 22vw !important;
+   }
 }

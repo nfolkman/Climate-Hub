@@ -3,6 +3,9 @@ const Schema = mongoose.Schema
 
 
 const articlesSchema = new Schema({
+   image: {
+      type: String
+   },
    title: {
       type: String
    },
@@ -10,6 +13,9 @@ const articlesSchema = new Schema({
       type: String
    },
    source: {
+      type: String
+   },
+   link: {
       type: String
    },
    date: {

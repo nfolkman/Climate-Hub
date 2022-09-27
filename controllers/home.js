@@ -1,9 +1,14 @@
-const ArticlesModel = require('../models/Articles')
+const Article = require('../models/Articles')
 // Home route controller
 
 module.exports = {
    getIndex: (req,res) => {
-      res.render('index')
+      
+      // let articles = [{'title': 'Climate Change Is Real'},{'title': 'Temperatures Change Over Time'},{'title': 'Nonprofits pay Texas farmers to not water crops during drought'}]
+
+      Article.find({}, function(err, articles) {
+         res.render('index', {articlesList: articles})
+      })
    },
    getResources: (res,req) => {
       res.render('resources')
