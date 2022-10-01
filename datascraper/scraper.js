@@ -10,8 +10,7 @@ async function scraper(){
    const browser = await puppeteer.launch()
    const page = await browser.newPage()
    await page.goto(URL, {waitUntil: 'domcontentloaded'})
-
-
+   
    /*** code to take screenshot ***/
    // await page.screenshot({path: 'dailyclimate.png',fullPage: true})
 
