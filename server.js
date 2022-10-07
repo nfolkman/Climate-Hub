@@ -6,7 +6,12 @@ const impactsAnalysis = require('./datascraper/analysis')
 const scraper = require('./datascraper/scraper')
 const mainRoutes = require('./routes/routesMain')
 
-               // DO NOT FORGET SPACES BETWEEN ASTRISKS
+
+scraper()
+.then(data=> impactsAnalysis(data))
+.catch(console.error())
+
+// DO NOT FORGET SPACES BETWEEN ASTRISKS
 nodeCron.schedule('*/15 * * * *', () => {
    scraper()
    .then(data => {impactsAnalysis(data)
