@@ -52,7 +52,6 @@ async function scraper(){
 
    dataObj = data
    console.log(data)
-   console.log(data.length)
 
    await browser.close()
 
