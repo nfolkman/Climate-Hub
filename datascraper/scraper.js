@@ -37,7 +37,7 @@ async function scraper(){
 
 
       // iterate through content and push to array
-      for(let i = 0; i<items.length; i++){
+      for(let i = 0; i<15; i++){
          list.push( {
             image: image[i],
             title: title[i],
@@ -52,6 +52,7 @@ async function scraper(){
 
    dataObj = data
    console.log(data)
+   console.log(data.length)
 
    await browser.close()
 
