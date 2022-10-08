@@ -47,7 +47,9 @@ async function scraper(){
             date: date[i],
          })
       }
-      return list
+      // return list.sort((a, b) => (a.date.length > b.date.length) ? 1 : -1)
+      // return list.sort((a, b) => (a.date.includes('h')) ? -1 : 1)
+      return list.sort((a,b)=>Date.parse(a.date)-Date.parse(b.date))
    })
 
    dataObj = data
