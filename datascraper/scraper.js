@@ -1,21 +1,21 @@
 const puppeteer = require('puppeteer')
 const URL = 'https://www.dailyclimate.org/impacts/'
 
+// function for lazyloading fix
 function wait (ms) {
    return new Promise(resolve => setTimeout(() => resolve(), ms));
  }
 
+// scraping function
 async function scraper(){
-
-
 
    const browser = await puppeteer.launch()
    const page = await browser.newPage()
    await page.goto(URL, {waitUntil: 'load'})
    
-   /*** code to take screenshot ***/
-   // await page.screenshot({path: 'dailyclimate.png',fullPage: true})
 
+
+/*** LAZYLOADING FIX ***/
   // Get the height of the rendered page
   const bodyHandle = await page.$('body');
   const { height } = await bodyHandle.boundingBox();
@@ -39,6 +39,7 @@ async function scraper(){
 
   // Some extra delay to let images load
   await wait(100);
+/***  END OF LAZYLOADING FIX ***/
 
 
 
@@ -76,7 +77,7 @@ async function scraper(){
          
       }
       
-      /*** WHY WON'T THIS FUNCTION TO EVALUATE AND EDIT THE IMAGE SOURCE URL ***/
+      /*** WHY WON'T THIS FUNCTION TO EVALUATE AND EDIT THE IMAGE SOURCE URL WORK ***/
       // this function makes sure the images will be scraped and displayed in original 416x277 format
       // for(let i = 0; i<list.length; i++){
       //    list[image]= list[image].split('&')
