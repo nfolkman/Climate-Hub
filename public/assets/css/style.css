@@ -74,6 +74,10 @@ nav li a{
    transition: 225ms;
 }
 
+#article-image{
+   width: 100%;
+}
+
 .linkIcon{
    width: 20px !important;
    height: 20px;
