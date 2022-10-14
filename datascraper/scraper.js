@@ -76,6 +76,15 @@ async function scraper(){
          })
          
       }
+
+      for(let i = 0; i<list.length; i++){
+         list[i].image = list[i].image.split('&')
+         for(let j = 0; j<list[i].image.length;j++){
+            if(list[i].image[j].includes('width')) list[i].image[j] = 'width=416'
+            if(list[i].image[j].includes('height')) list[i].image[j] =  'height=277'
+         }
+         list[i].image = list[i].image.join('&')
+      }
       
       /*** WHY WON'T THIS FUNCTION TO EVALUATE AND EDIT THE IMAGE SOURCE URL WORK ***/
       // this function makes sure the images will be scraped and displayed in original 416x277 format
