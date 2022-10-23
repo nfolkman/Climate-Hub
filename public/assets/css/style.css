@@ -70,8 +70,9 @@ nav li a{
 
 
 .articleItems:hover{
-   background-color: #e4e2e26f;
-   transition: 225ms;
+   background-color: #eae8e86f;
+   transition: 225ms ease-in-out;
+   transform: scale(1.03);
 }
 
 #article-image{

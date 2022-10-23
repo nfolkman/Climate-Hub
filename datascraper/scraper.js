@@ -79,25 +79,22 @@ async function scraper(){
 
       for(let i = 0; i<list.length; i++){
          list[i].image = list[i].image.split('&')
+         list[i].summary = list[i].summary.split(' ')
+
          for(let j = 0; j<list[i].image.length;j++){
+            // image source edit
             if(list[i].image[j].includes('width')) list[i].image[j] = 'width=416'
             if(list[i].image[j].includes('height')) list[i].image[j] =  'height=277'
          }
-         list[i].image = list[i].image.join('&')
-      }
-      
-      /*** WHY WON'T THIS FUNCTION TO EVALUATE AND EDIT THE IMAGE SOURCE URL WORK ***/
-      // this function makes sure the images will be scraped and displayed in original 416x277 format
-      // for(let i = 0; i<list.length; i++){
-      //    list[image]= list[image].split('&')
-      //    for(let j = 0; j<list[image].length; j++){
-      //       if(list[image][j].includes('width=')) list[image][j] = 'width=416'
-      //       if(list[image][j].includes('height=')) list[image][j] = 'height=277'
-      //    }
-      //    list[image] = list[image].join('&')
-      
-      // }
+            // summary limit condition - if summary is more than 45 words, splice and add '...'
+            if(list[i].summary.length > 45) {
+               list[i].summary = list[i].summary.splice(0,45)
+               list[i].summary.push(['...'])
+            }
 
+         list[i].image = list[i].image.join('&')
+         list[i].summary = list[i].summary.join(' ')
+      }
       
        return list.sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))
       
