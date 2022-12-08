@@ -35,7 +35,7 @@ app.use('/', mainRoutes)
 app.use('/resources/', mainRoutes)
 
 
-
+console.log(process.env.PORT)
 app.listen(process.env.PORT, ()=> {
-   console.log('Server is running!')
+   console.log(`Server is running!`)
 })

@@ -55,7 +55,7 @@ async function scraper(){
       // target scrape content
       let items = Array.from(document.querySelectorAll('article.page-article'))
 
-      let image = Array.from(document.querySelectorAll('#col-center > div.widget__head > a > img')).map(x =>  x.src)
+      let image = Array.from(document.querySelectorAll(' article > div > div > div.widget__head > a > img')).map(x =>  x.src)
 
       let title = Array.from(document.querySelectorAll('.widget__headline-text')).map(x => x.textContent.trim())
       let summary = Array.from(document.querySelectorAll('.body-description')).map(x => x.textContent.trim())
@@ -77,9 +77,13 @@ async function scraper(){
          
       }
 
+      console.log(list)
+
       for(let i = 0; i<list.length; i++){
-         list[i].image = list[i].image.split('&')
-         list[i].summary = list[i].summary.split(' ')
+          list[i].image = list[i].image.split('&')
+          list[i].summary = list[i].summary.split(' ')
+         console.log(list[i].image)
+         console.log(list[i].summary)
 
          for(let j = 0; j<list[i].image.length;j++){
             // image source edit
